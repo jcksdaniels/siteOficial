@@ -1,0 +1,17 @@
+
+.jumbotron {
+    margin-top: 60px;
+    background-size:cover;
+    padding-left: 30px;
+    background-size: cover;
+}
+
+.img-responsive{
+
+    width: 100%;
+    padding-top:-25px;
+  }
+
+.nav-bar{
+    background-color: #666666;
+}

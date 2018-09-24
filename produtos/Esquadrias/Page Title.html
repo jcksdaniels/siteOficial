@@ -1,0 +1,69 @@
+
+<!-- saved from url=(0082)file:///home/jcksdaniels/Documentos/Fun%C3%A7%C3%B5esJS/ExemplosArrowFunction.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>!
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="file:///home/jcksdaniels/Documentos/Fun%C3%A7%C3%B5esJS/main.css">
+    <script src="file:///home/jcksdaniels/Documentos/Fun%C3%A7%C3%B5esJS/main.js"></script>
+
+
+    
+    <h1>Testando minhas funções javascript!!!!</h1>
+    <script>
+    //Templates literals
+
+    const Australia = {
+
+        live:'Sydney',
+        love:'Melbourne'
+
+    };
+
+           const text = 'Eu moro em '+ Australia.live + ' e sou apaixonado por ' + Australia.love +'!'
+           const newText = `Eu moro em ${Australia.live} e amo ${Australia.love} !!`
+
+       console.log(newText);
+
+       // Templates let us change the line easily
+
+       const cities =
+        `Sydney
+         Melbourne
+         Queensland`
+        console.log(cities);
+
+       //Using templates literals in HTML
+
+       const article = {
+
+        titulo:'Estou aprendendo ECMAScript',
+        texto: 'Estou fazendo alguns exercícios para memorizar a sintaxe',
+        tags: ['js', 'javascript', 'ecmascript']
+
+       };
+
+       const markup = `  
+       <article>
+        <header>
+            <h1>${article.titulo}</h1>
+            </header>
+            <section>
+                <p>${article.texto}</p>
+            </section>
+            <footer>
+                <ul>
+                    ${article.tags.map((map) => `<li>${tags}<li>`)}
+                </ul>
+            </footer>
+         </article>
+       
+       `;
+        document.body.innerHTML= markup;
+
+    </script>
+
+</body></html>
